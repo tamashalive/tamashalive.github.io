@@ -156,66 +156,23 @@
             <iframe src="https://cdn.crichdplays.ru/embed2.php?id=willow" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" allowfullscreen></iframe>
         </section>
         <button class="fullscreen-button" onclick="goFullscreen(document.querySelector('iframe'))">Full Screen</button>
-        <div class="section">
-            <div class="container-row">
-                <a href="/willow-cricket.html" class="container" target="_blank">
-                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                    <h3>Willow Cricket</h3>
-                </a>
-                <a href="/a-sports-hd.html" class="container" target="_blank">
-                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
-                    <h3>A Sports HD</h3>
-                </a>
-                <a href="/willow-cricket.html" class="container" target="_blank">
-                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                    <h3>Willow Cricket</h3>
-                </a>
-            </div>
-            <div class="container-row">
-                <a href="/a-sports-hd.html" class="container" target="_blank">
-                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
-                    <h3>A Sports HD</h3>
-                </a>
-                <a href="/willow-cricket.html" class="container" target="_blank">
-                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                    <h3>Willow Cricket</h3>
-                </a>
-                <a href="/a-sports-hd.html" class="container" target="_blank">
-                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
-                    <h3>A Sports HD</h3>
-                </a>
-            </div>
-            <div class="container-row">
-                <a href="/willow-cricket.html" class="container" target="_blank">
-                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                    <h3>Willow Cricket</h3>
-                </a>
-                <a href="/a-sports-hd.html" class="container" target="_blank">
-                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
-                    <h3>A Sports HD</h3>
-                </a>
-                <a href="/willow-cricket.html" class="container" target="_blank">
-                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                    <h3>Willow Cricket</h3>
-                </a>
-            </div>
+
+        
+        <div class="section" id="live-matches-section">
+            <!-- This section will be populated by JS -->
         </div>
+
+
+        
     </main>
     <footer>
         <p>Copy Right 2025, Tamasha Live</p>
     </footer>
+
+    
     <script>
-        function goFullscreen(iframe) {
-            if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-            } else if (iframe.mozRequestFullScreen) { // Firefox
-                iframe.mozRequestFullScreen();
-            } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-                iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) { // IE/Edge
-                iframe.msRequestFullscreen();
-            }
-        }
-    </script>
+      <script src="assets/js/scripts.js"></script>
+
+
 </body>
 </html>
