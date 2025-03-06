@@ -60,29 +60,25 @@
         justify-content: space-between;
         margin: 20px auto;
         max-width: 1200px;
+        gap: 20px;
     }
 
-
-   .section {
-        
+    .section {
         overflow: hidden;
         margin: 40px 40px;
     }
 
-
-
     .container {
-        width: 50%;
+        width: 30%; /* Adjusted to fit 3 items per row */
         background-color: white;
         border: 1px solid #ccc;
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 0 10px;
     }
 
     .container img {
-        width: 50%;
+        width: 100%;
         height: auto;
     }
 
@@ -114,6 +110,7 @@
 
         .container-row {
             flex-direction: column;
+            gap: 10px; /* Reduced space for smaller screens */
         }
 
         .container {
@@ -157,43 +154,54 @@
         </section>
         <button class="fullscreen-button" onclick="goFullscreen(document.querySelector('iframe'))">Full Screen</button>
 
+        <div class="section">
+            <!-- New Containers -->
+            <div class="container-row">
+                <a href="/willow-cricket.html" class="container" target="_blank">
+                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
+                    <h3>Willow Cricket</h3>
+                </a>
+                <a href="/a-sports-hd.html" class="container" target="_blank">
+                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
+                    <h3>A Sports HD</h3>
+                </a>
+                <a href="/willow-cricket.html" class="container" target="_blank">
+                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
+                    <h3>Willow Cricket</h3>
+                </a>
+            </div>
 
+            <div class="container-row">
+                <a href="/a-sports-hd.html" class="container" target="_blank">
+                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
+                    <h3>A Sports HD</h3>
+                </a>
+                <a href="/willow-cricket.html" class="container" target="_blank">
+                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
+                    <h3>Willow Cricket</h3>
+                </a>
+                <a href="/a-sports-hd.html" class="container" target="_blank">
+                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
+                    <h3>A Sports HD</h3>
+                </a>
+            </div>
 
-<div class="section">
-        <!-- New Containers -->
-          <div class="container-row">
-            <a href="/willow-cricket.html" class="container" target="_blank">
-                <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                <h3>Willow Cricket</h3>
-            </a>
-            <a href="/a-sports-hd.html" class="container" target="_blank">
-                <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
-                <h3>A Sports HD</h3>
-            </a>
+            <div class="container-row">
+                <a href="/willow-cricket.html" class="container" target="_blank">
+                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
+                    <h3>Willow Cricket</h3>
+                </a>
+                <a href="/a-sports-hd.html" class="container" target="_blank">
+                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
+                    <h3>A Sports HD</h3>
+                </a>
+                <a href="/willow-cricket.html" class="container" target="_blank">
+                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
+                    <h3>Willow Cricket</h3>
+                </a>
+            </div>
         </div>
 
-              <div class="container-row">
-            <a href="/willow-cricket.html" class="container" target="_blank">
-                <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                <h3>Willow Cricket</h3>
-            </a>
-            <a href="/a-sports-hd.html" class="container" target="_blank">
-                <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
-                <h3>A Sports HD</h3>
-            </a>
-        </div>
-
-              <div class="container-row">
-            <a href="/willow-cricket.html" class="container" target="_blank">
-                <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                <h3>Willow Cricket</h3>
-            </a>
-            <a href="/a-sports-hd.html" class="container" target="_blank">
-                <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
-                <h3>A Sports HD</h3>
-            </a>
-        </div>
-  </div>
     </main>
     <footer>
         <p>Copy Right 2025, Tamasha Live</p>
