@@ -1,1 +1,0 @@
-# tamashalive.github.io
