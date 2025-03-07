@@ -21,6 +21,7 @@
     </script>
     
     <style>
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -61,9 +62,9 @@
             background-color: #17a56b;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 20px 40px;
             margin: -40px;
-            font-size: 16px;
+            font-size: 20px;
             border-radius: 5px;
         }
 
@@ -164,17 +165,19 @@
         }
 
         .container-iframe {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            max-width: 1000px; /* Prevents it from becoming too wide */
-            height: 400px; /* Maintains a 16:9 aspect ratio based on the width */
-            background-color: #000000; /* Optional for better visualization */
-            margin: 0 auto; /* Centers the container horizontally */
-            padding: 0 20px; /* Optional padding for better spacing on small screens */
-            box-sizing: border-box; /* Ensures padding is included in the width */
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1180px; /* Prevents it from becoming too wide */
+    height: 500px; /* Maintains a 16:9 aspect ratio based on the width */
+    background-color: #000000; /* Optional for better visualization */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px; /* Optional padding for better spacing on small screens */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    border-radius: 15px; /* Adds rounded corners */
+}
+
 
         @media (max-width: 768px) {
             .container-iframe {
@@ -188,6 +191,7 @@
                 height: 75vw; /* On very small screens, adjust the aspect ratio if needed */
             }
         }
+    
     </style>
 </head>
 <body>
