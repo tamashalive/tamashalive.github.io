@@ -57,19 +57,30 @@
             aspect-ratio: 16 / 9;
         }
 
+        /* Fullscreen button styles */
+        .button-container {
+            background-color: #ffffff; /* White background for the container */
+            padding: 20px;
+            width: 100%;
+            display: inline-block;
+            border-radius: 8px; /* Rounded corners for the background container */
+        }
+
         .fullscreen-button {
-            position: absolute;
-            background-color: #17a56b;
-            color: white;
+            background-color: #000000; /* Black button background */
+            color: white; /* White text color */
             border: none;
             padding: 20px 40px;
-            margin: -40px;
             font-size: 20px;
             border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease;
         }
 
         .fullscreen-button:hover {
-            background-color: #444;
+            background-color: #444; /* Darker background when hovering */
         }
 
         .container-row {
@@ -165,19 +176,18 @@
         }
 
         .container-iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1180px; /* Prevents it from becoming too wide */
-    height: 500px; /* Maintains a 16:9 aspect ratio based on the width */
-    background-color: #000000; /* Optional for better visualization */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 0 20px; /* Optional padding for better spacing on small screens */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    border-radius: 15px; /* Adds rounded corners */
-}
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1180px; /* Prevents it from becoming too wide */
+            height: 500px; /* Maintains a 16:9 aspect ratio based on the width */
+            background-color: #000000; /* Optional for better visualization */
+            margin: 0 auto; /* Centers the container horizontally */
+            padding: 0 20px; /* Optional padding for better spacing on small screens */
+            box-sizing: border-box; /* Ensures padding is included in the width */
+            border-radius: 15px; /* Adds rounded corners */
+        }
 
         @media (max-width: 768px) {
             .container-iframe {
@@ -202,7 +212,10 @@
         <h1 style="text-align: center;">You Can Watch Willow Cricket Live</h1>
        
         <div class="container-iframe">
-            <a href="https://www.example.com" class="fullscreen-button">Watch Here</a>
+            <!-- Wrap button inside a container to show background behind it -->
+            <div class="button-container">
+                <a href="https://www.example.com" class="fullscreen-button">Watch Here</a>
+            </div>
         </div>
 
         <div class="section">
