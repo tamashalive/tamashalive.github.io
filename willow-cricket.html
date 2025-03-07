@@ -3,175 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Willow Cricket At Tamasha Live</title>
-    <style> 
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
+    <meta name="robots" content="index, follow" />
+    <title>Tamasha Live</title>
+    <meta name="description" content="Watch live matches with Tamasha Live! Enjoy streaming of exciting games, real-time action, and never miss a moment of your favorite sports.">
+        <meta name="author" content="Tamasha Live Team">
+	    <meta name="publisher" content="Tamasha Live Team">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8XFS8DK8T1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    header {
-        background-color: #000000;
-        color: white;
-        padding: 15px 0;
-        font-size: 24px;
-    }
+  gtag('config', 'G-8XFS8DK8T1');
+</script>
 
-    footer {
-        background-color: #000000;
-        color: white;
-        padding: 15px 0;
-        font-size: 16px;
-    }
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-    #live-matches {
-        margin: 20px;
-        padding: 20px;
-    }
-
-    iframe {
-        pointer-events: none; /* Prevent interaction if ads are present */
-        width: 100%;
-        max-width: 1200px;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    .fullscreen-button {
-        position: absolute;
-        background-color: #17a56b;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        margin: -40px;
-        font-size: 16px;
-        border-radius: 5px;
-    }
-
-    .fullscreen-button:hover {
-        background-color: #444;
-    }
-
-    .container-row {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px auto;
-        max-width: 1200px;
-    }
-
-
-   .section {
-        
-        overflow: hidden;
-        margin: 40px 40px;
-    }
-
-
-
-    .container {
-        width: 50%;
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 0 10px;
-    }
-
-    .container img {
-        width: 50%;
-        height: auto;
-    }
-
-    .container h3 {
-        margin: 10px;
-        font-size: 18px;
-    }
-
-    @media (max-width: 768px) {
         header {
-            font-size: 18px;
+            background-color: #000000;
+            color: white;
+            padding: 45px 45px 45px 45px;
+            font-size: 24px;
         }
 
-        .fullscreen-button {
-            padding: 8px 16px;
-            font-size: 14px;
-        }
-
-        iframe {
-            margin: 0 auto;
-            width: 100%;
-            height: auto;
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 15px 0;
+            font-size: 16px;
         }
 
         #live-matches {
-            padding: 10px;
-            margin: 10px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        iframe {
+            pointer-events: none;
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+
+        .fullscreen-button {
+            position: absolute;
+            background-color: #17a56b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: -40px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .fullscreen-button:hover {
+            background-color: #444;
         }
 
         .container-row {
-            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1200px;
+            gap: 20px;
+        }
+
+        .section {
+            overflow: visible;
+            margin: 80px 20px;
+	text-align: center;
+	
         }
 
         .container {
-            width: 90%;
-            margin: 10px auto;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .fullscreen-button {
-            padding: 6px 12px;
-            font-size: 12px;
+            width: 33%;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        header {
-            font-size: 16px;
-            padding: 10px 0;
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        .container h3 {
-            font-size: 16px;
+        .container img {
+            width: 60%;
+            height: auto;
+            transition: transform 0.3s ease;
         }
+
+        .container:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 18px;
+            }
+
+            .fullscreen-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            iframe {
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+            }
+
+            #live-matches {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .container-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .fullscreen-button {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            header {
+                font-size: 16px;
+                padding: 10px 0;
+            }
+
+            .container h3 {
+                font-size: 16px;
+            }
+        }
+                a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+         .container-iframe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0; /* optional for better visualization */
     }
     </style>
 </head>
 <body>
     <header>
-        <h1>Tamasha Live</h1>
+        <logo><a href="/">Tamasha Live</a></logo>
     </header>
     <main>
-        <section id="live-matches">
-            <iframe src="https://cdn.crichdplays.ru/embed2.php?id=willow" 
-                    style="border:0px #ffffff none;" 
-                    name="myiFrame" 
-                    scrolling="no" 
-                    allowfullscreen>
-            </iframe>
-        </section>
+        <h1 style="text-align: center;">You Can Enjoy All Live Matches </h1>
+       
+          <div class="container-iframe">
+    <a href="https://www.example.com" class="button">Watch Here</a>
+  </div>
+
         <button class="fullscreen-button" onclick="goFullscreen(document.querySelector('iframe'))">Full Screen</button>
 
-
-
-<div class="section">
-        <!-- New Containers -->
-          <div class="container-row">
-            <a href="/willow-cricket.html" class="container" target="_blank">
-                <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
-                <h3>Willow Cricket</h3>
-            </a>
-            <a href="/a-sports-hd.html" class="container" target="_blank">
-                <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
-                <h3>A Sports HD</h3>
-            </a>
+ <div class="section">
+	    <h2 >Watch Live Match Streams Online on These Channels</h2>
+ </div>
+        <div class="section">
+            <div class="container-row">
+                <a href="/willow-cricket.html" class="container" target="_blank">
+                    <img src="/images/willow-cricket.jpg" alt="Willow Cricket">
+                    <h3>Willow Cricket</h3>
+                </a>
+                <a href="/a-sports-hd.html" class="container" target="_blank">
+                    <img src="/images/a-sports-hd.jpg" alt="A Sports HD">
+                    <h3>A Sports HD</h3>
+                </a>
+                <a href="/astro-cricket.html" class="container" target="_blank">
+                    <img src="/images/astro-cricket.jpg" alt="Willow Cricket">
+                    <h3>Astro Cricket </h3>
+                </a>
+            </div>
+            <div class="container-row">
+                <a href="/sky-sports-cricket.html" class="container" target="_blank">
+                    <img src="/images/sky-sports-cricket.jpg" alt="A Sports HD">
+                    <h3>Sky Sports Cricket </h3>
+                </a>
+                <a href="/star-sports-1.html" class="container" target="_blank">
+                    <img src="/images/star-sports-1.jpg" alt="Willow Cricket">
+                    <h3> Star Sports 1</h3>
+                </a>
+                <a href="/star-sports-2.html" class="container" target="_blank">
+                    <img src="/images/star-sports-2.jpg" alt="A Sports HD">
+                    <h3>Star Sports 2</h3>
+                </a>
+            </div>
+            <div class="container-row">
+                <a href="/star-sports-3.html" class="container" target="_blank">
+                    <img src="/images/star-sports-3.jpg" alt="Willow Cricket">
+                    <h3>Star Sports 3</h3>
+                </a>
+                <a href="/supersport-cricket.html" class="container" target="_blank">
+                    <img src="/images/supersport-cricket.jpg" alt="A Sports HD">
+                    <h3>Supersport Cricket</h3>
+                </a>
+                <a href="/ten-sports.html" class="container" target="_blank">
+                    <img src="/images/ten-sports.jpg" alt="Willow Cricket">
+                    <h3>Ten Sports</h3>
+                </a>
+                
+            </div>
+                        <div class="container-row">
+                <a href="/tnt-sports-1.html" class="container" target="_blank">
+                    <img src="/images/tnt-sports-1.jpg" alt="Willow Cricket">
+                    <h3>TNT Sports 1 </h3>
+                </a>
+                <a href="/tnt-sports-2.html" class="container" target="_blank">
+                    <img src="/images/tnt-sports-2.jpg" alt="A Sports HD">
+                    <h3>TNT Sports 2</h3>
+                </a>
+                <a href="/tnt-sports-3.html" class="container" target="_blank">
+                    <img src="/images/tnt-sports-3.jpg" alt="Willow Cricket">
+                    <h3>TNT Sports 3</h3>
+                </a>
+                
+            </div>
         </div>
-  </div>
     </main>
+    
+    
+
+
+
+	
     <footer>
-        <p>Copy Right 2025, Tamasha Live</p>
+        <p>Copy Right 2025, <a href="/">Tamasha Live</a></p>
     </footer>
     <script>
         function goFullscreen(iframe) {
@@ -188,5 +274,3 @@
     </script>
 </body>
 </html>
-
-
