@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Sky Sports Premier League</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .iframe-container {
+            width: 100%;
+            max-width: 1600px;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 20px auto;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="loadStream()">
+
+<div class="iframe-container" id="iframeWrapper">
+    <iframe id="myIframe" style="border:0px;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
+</div>
+
+<button onclick="reloadIframe()">Reload Stream</button>
+
+<script>
+function loadStream() {
+    var encodedUrl = "aHR0cHM6Ly9jZG4uY3JpY2hkcGxheXMucnUvZW1iZWQyLnBocD9pZD1za3lzcDU=";
+    document.getElementById('myIframe').src = atob(encodedUrl);
+}
+
+function reloadIframe() {
+    document.getElementById('myIframe').src = document.getElementById('myIframe').src;
+}
+</script>
+
+<!-- Include the external JavaScript file -->
+<script src="adblock.js"></script>
+
+</body>
+</html>
